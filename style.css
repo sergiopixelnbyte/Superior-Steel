@@ -61,17 +61,29 @@ p {
   font-size: 16px;
   font-family: Stolzl;
   font-weight: 300;
+
 }
 
 h1 {
   font-size: 41px;
   line-height: 53px;
 
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: ikaros_sanslight, sans-serif;
 }
 
-h2 {}
-
+h2{
+  color: var(--blue);
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 36px;
+}
 h3 {}
 
 h4 {}
@@ -153,12 +165,15 @@ nav.nav-bar ul.nav-list #main-logo {
 
 .nav-item.download p {
   color: var(--blue);
-  font-weight: 500!important;
+  font-weight: 500 !important;
 }
 
 .home-content {
   display: flex;
   justify-content: space-between;
+
+  max-width: 1666px;
+  margin: auto;
 }
 
 .home-content .right-side {
@@ -203,6 +218,40 @@ nav.nav-bar ul.nav-list #main-logo {
   border: 1px solid var(--light-blue);
 }
 
-#about{
+#about {
   padding-top: 165px;
+}
+
+#about .about-content{
+  width: 87.7%;
+  margin: auto;
+}
+
+#about .title{
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+#blank{
+  width: 100vw;
+  height: 2000px;
+}
+
+
+#about .about-icons{
+  width: 100%;
+
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+#about .about-icons .about-icon .img-wrapper img{
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+#about .about-icons .about-icon p{
+  font-weight: 600;
+  color: var(--blue);
+  margin-top: 29px;
 }
