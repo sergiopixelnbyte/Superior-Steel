@@ -391,3 +391,78 @@ nav.nav-bar ul.nav-list #main-logo {
   padding-left: 24px;
   padding-right: 24px;
 }
+
+.blue-bg, footer{
+  background-color: var(--blue);
+}
+
+#process{
+  padding-top: 195px;
+}
+
+#contact{
+  background-color: white;
+  max-width: 1222px;
+  margin-left: auto;
+}
+
+.contact-inner-wrapper{
+  max-width: 777px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .wrapper{
+  width: 80%;
+  padding-top: 91px;
+  padding-bottom: 87.2px;
+}
+
+#contact p.title{
+  color: var(--blue);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#contact h3.sub-title{
+  color: #093448;
+  font-size: 28px;
+  letter-spacing: 0.84px;
+}
+#contact .contact-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 114px;
+}
+
+#contact .contact-icons .img-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-form, #contact input{
+  width: 100%;
+}
+#contact button {
+  width: 164px;
+  display: inline-block;
+  margin-right: auto;
+}
+
+#contact .contact-form form{
+  display: grid;
+  grid-template-areas: "" "" "";
+}
+#footer{
+  color: white;
+  padding-top: 43px;
+  padding-bottom: 22px;
+}
