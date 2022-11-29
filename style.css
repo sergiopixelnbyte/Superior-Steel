@@ -46,6 +46,10 @@ html {
   font-family: Stolzl, sans-serif;
 }
 
+.button:hover{
+  background-color: var(--light-blue);
+}
+
 a,
 a:link,
 a:visited {
@@ -103,6 +107,7 @@ h4 {}
 .wrapper {
   width: 89.2%;
   margin: auto;
+  max-width: 2000px;
 }
 
 /*Home BG*/
@@ -414,12 +419,85 @@ footer {
 
 #process {
   padding-top: 195px;
+  text-align: center;
+}
+
+#process p.title{
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 39px;
+  color: white
+}
+
+#process p.text{
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  line-height: 26px;
+  margin-bottom: 39px;
+  color: white
+}
+
+#process .buttons .button{
+  color: white;
+  border: 1px solid var(--light-blue)
+}
+
+#process .buttons .button#bars{
+  padding-left: 61px;
+  padding-right: 61px;
+  
+}
+#process .buttons .button#contact-btn{
+  padding-left: 22px;
+  padding-right: 22px;
+
+  margin-left: 17px;
+}
+#process .scrollable-process{
+  margin-top: 39px;
+}
+#process .scrollable-process img{
+  width: 1216px;
+  height: 583px;
+}
+
+#process .step-desc{
+  max-width: 440px;
+  margin: auto;
+  text-align: start;
+  color: white;
+}
+
+#process .step-title{
+  position: relative;
+  margin-bottom: 22px;
+  margin-top: 92px;
+  font-size: 28px;
+  line-height: 14px;
+}
+
+#process .step-text{
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 100;
+}
+
+#process p.step-title:before {
+  content: '';
+  width: 2px;
+  height: 69px;
+  background-color: white;
+  position: absolute;
+  top: -98px;
+  left: 4px;
 }
 
 #contact {
   background-color: white;
   max-width: 1222px;
   margin-left: auto;
+  margin-top: 100px;
 }
 
 .contact-inner-wrapper {
