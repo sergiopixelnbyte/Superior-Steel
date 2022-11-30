@@ -146,10 +146,6 @@ h4 {}
 /*navbar*/
 #home nav .mobile-menu {
   display: none;
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 50%;
 }
 
 nav.nav-bar {
@@ -665,6 +661,28 @@ footer {
 
   #home .wrapper nav .mobile-menu {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;  
+    gap: 12px 0;
+  }
+
+  #home .wrapper nav .mobile-menu .line {
+    background: white;
+    border-radius: 20px;
+    height: 4px;
+  }
+
+  #home .wrapper nav .mobile-menu #line-1 {
+    width: 55px;
+  }
+
+  #home .wrapper nav .mobile-menu #line-2 {
+    width: 40px;
+  }
+
+  #home .wrapper nav .mobile-menu #line-3 {
+    width: 22px;
   }
 
   #home .wrapper {
@@ -883,7 +901,7 @@ footer {
     margin-bottom: 47.5px;
   }
 
-  #footer .bottom{
+  #footer .bottom {
     flex-direction: column;
     align-items: center;
     gap: 10px;
