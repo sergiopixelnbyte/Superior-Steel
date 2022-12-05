@@ -70,7 +70,6 @@ li {
 p {
   font-size: 16px;
   font-family: Stolzl;
-  font-weight: 300;
 
 }
 
@@ -173,6 +172,10 @@ nav.nav-bar ul.nav-list {
   align-items: center;
 }
 
+nav.nav-bar li{
+  font-weight: 200;
+}
+
 nav.nav-bar ul.nav-list #main-logo {
   width: 112px;
   height: 87px;
@@ -232,7 +235,7 @@ nav.nav-bar ul.nav-list #main-logo {
 }
 
 .home-content .left-side .content-text p {
-  font-weight: 300;
+  font-weight: 200;
   line-height: 24px;
 }
 
@@ -345,7 +348,7 @@ nav.nav-bar ul.nav-list #main-logo {
   left: -31px;
   top: -3px;
   color: var(--light-blue);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -585,6 +588,12 @@ footer {
   justify-content: center;
 }
 
+#contact .contact-icons .img-wrapper p{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--blue)
+}
+
 #contact .contact-form,
 #contact input {
   width: 100%;
@@ -596,7 +605,7 @@ footer {
     "email phone"
     "message message"
     ". button";
-  gap: 15px 23px;
+  gap: 23px 15px;
 }
 
 #contact .name {
@@ -617,6 +626,12 @@ footer {
 
 #contact .message {
   grid-area: message;
+}
+
+#contact .input-hint{
+  font-weight: 200;
+  font-size: 14px;
+  color: var(--blue);
 }
 
 #contact .submit-button {
@@ -665,6 +680,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#footer ul p{
+  font-weight: 200;
 }
 
 #footer .bottom {
