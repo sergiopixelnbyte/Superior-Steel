@@ -1,19 +1,15 @@
 @font-face {
-  font-family: 'ikaros_sanslight';
-  src: url('./Ikaros Fix/ikaros-light-webfont.woff2') format('woff2'),
-    url('./Ikaros Fix/ikaros-light-webfont.woff') format('woff');
+  font-family: "ikaros_sanslight";
+  src: url("./Ikaros Fix/ikaros-light-webfont.woff2") format("woff2"),
+    url("./Ikaros Fix/ikaros-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
-
-
-
 @font-face {
-  font-family: 'ikaros_sansregular';
-  src: url('./Ikaros Fix/ikaros-regular-webfont.woff2') format('woff2'),
-    url('./Ikaros Fix/ikaros-regular-webfont.woff') format('woff');
+  font-family: "ikaros_sansregular";
+  src: url("./Ikaros Fix/ikaros-regular-webfont.woff2") format("woff2"),
+    url("./Ikaros Fix/ikaros-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,14 +21,13 @@ html {
 
 :root {
   --blue: #093448;
-  --light-blue: #008FD2;
+  --light-blue: #008fd2;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 .button {
@@ -70,13 +65,11 @@ li {
 p {
   font-size: 16px;
   font-family: Stolzl;
-
 }
 
 h1 {
   font-size: 41px;
   line-height: 53px;
-
 }
 
 h1,
@@ -94,9 +87,11 @@ h2 {
   font-size: 36px;
 }
 
-h3 {}
+h3 {
+}
 
-h4 {}
+h4 {
+}
 
 /*Page content principal wrapper*/
 #page-content {
@@ -146,12 +141,12 @@ h4 {}
   display: none;
 }
 
-#home .nav-bar{
+#home .nav-bar {
   position: relative;
 }
 
-.active{
-  display: flex!important;
+.active {
+  display: flex !important;
 
   position: absolute;
   top: 0;
@@ -172,7 +167,7 @@ nav.nav-bar ul.nav-list {
   align-items: center;
 }
 
-nav.nav-bar li{
+nav.nav-bar li {
   font-weight: 200;
 }
 
@@ -267,7 +262,6 @@ nav.nav-bar ul.nav-list #main-logo {
   height: 2000px;
 }
 
-
 #about .about-icons {
   width: 100%;
 
@@ -296,7 +290,6 @@ nav.nav-bar ul.nav-list #main-logo {
   font-size: 24px;
   text-align: center;
 }
-
 
 /*WHO WE SERVE*/
 #products {
@@ -343,7 +336,12 @@ nav.nav-bar ul.nav-list #main-logo {
   text-align: left;
 }
 
-#products .wrapper .products-content.who-we-serve .top .left li.clients-list-item::after {
+#products
+  .wrapper
+  .products-content.who-we-serve
+  .top
+  .left
+  li.clients-list-item::after {
   content: url("./assets/checkmark.svg");
   position: absolute;
   left: -31px;
@@ -355,12 +353,10 @@ nav.nav-bar ul.nav-list #main-logo {
 
 #products .wrapper .products-content.who-we-serve .top .right {
   max-width: 50%;
-
 }
 
 #products .wrapper .products-content.who-we-serve .imgs-container {
   width: 50%;
-
 }
 
 #products .wrapper .products-content.who-we-serve .top .right .imgs-top {
@@ -452,7 +448,7 @@ nav.nav-bar ul.nav-list #main-logo {
   height: 100%;
   object-fit: contain;
   mix-blend-mode: multiply;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .blue-bg,
@@ -469,7 +465,7 @@ footer {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 39px;
-  color: white
+  color: white;
 }
 
 #process p.text {
@@ -477,18 +473,17 @@ footer {
   letter-spacing: 0.48px;
   line-height: 26px;
   margin-bottom: 39px;
-  color: white
+  color: white;
 }
 
 #process .buttons .button {
   color: white;
-  border: 1px solid var(--light-blue)
+  border: 1px solid var(--light-blue);
 }
 
 #process .buttons .button#bars {
   padding-left: 61px;
   padding-right: 61px;
-
 }
 
 #process .buttons .button#contact-btn {
@@ -530,7 +525,7 @@ footer {
 }
 
 #process p.step-title:before {
-  content: '';
+  content: "";
   width: 2px;
   height: 69px;
   background-color: white;
@@ -589,10 +584,27 @@ footer {
   justify-content: center;
 }
 
-#contact .contact-icons .img-wrapper p{
+#contact .contact-icons .img-wrapper p {
   font-size: 18px;
   font-weight: 400;
-  color: var(--blue)
+  color: var(--blue);
+}
+
+@media screen and (min-width: 1001px) {
+  #contact .contact-icons .img-wrapper:nth-child(2) {
+    position: relative;
+    left: 25px;
+  }
+}
+
+#contact .contact-img-wrapper.tel {
+  width: 42px;
+}
+#contact .contact-img-wrapper.mail {
+  width: 47px;
+}
+#contact .contact-img-wrapper.adress {
+  width: 30px;
 }
 
 #contact .contact-form,
@@ -602,7 +614,8 @@ footer {
 
 #contact .contact-form form .inputs-wrapper {
   display: grid;
-  grid-template-areas: "name last-name"
+  grid-template-areas:
+    "name last-name"
     "email phone"
     "message message"
     ". button";
@@ -629,7 +642,7 @@ footer {
   grid-area: message;
 }
 
-#contact .input-hint{
+#contact .input-hint {
   font-weight: 200;
   font-size: 14px;
   color: var(--blue);
@@ -655,9 +668,8 @@ footer {
   border: 1px solid var(--light-blue);
 }
 
-
-#contact textarea{
-  width: 100%
+#contact textarea {
+  width: 100%;
 }
 #contact input:focus {
   outline: 1px solid var(--blue);
@@ -688,7 +700,7 @@ footer {
   align-items: center;
 }
 
-#footer ul p{
+#footer ul p {
   font-weight: 200;
 }
 
@@ -706,7 +718,6 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-
   html {
     overflow-x: hidden;
   }
@@ -734,17 +745,15 @@ footer {
     gap: 12px 0;
   }
 
-  .nav-list.active a p{
+  .nav-list.active a p {
     color: var(--blue);
   }
 
-
-  .nav-list.active  {
+  .nav-list.active {
     justify-content: space-around;
   }
 
-  .nav-item.download{
-    
+  .nav-item.download {
   }
 
   #home .wrapper nav .mobile-menu .line {
@@ -927,8 +936,8 @@ footer {
     width: 95%;
   }
 
-  #contact .contact-form form .inputs-wrapper{
-    display: flex!important;
+  #contact .contact-form form .inputs-wrapper {
+    display: flex !important;
     flex-direction: column;
     gap: 20px 0;
   }
