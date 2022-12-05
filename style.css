@@ -340,13 +340,14 @@ nav.nav-bar ul.nav-list #main-logo {
 #products .wrapper .products-content.who-we-serve .top .left ul li {
   width: 120px;
   position: relative;
+  text-align: left;
 }
 
 #products .wrapper .products-content.who-we-serve .top .left li.clients-list-item::after {
   content: url("./assets/checkmark.svg");
   position: absolute;
   left: -31px;
-  top: -3px;
+  top: -1px;
   color: var(--light-blue);
   font-weight: 400;
   font-size: 18px;
@@ -647,12 +648,17 @@ footer {
   padding-right: 52px;
 }
 
-#contact input {
+#contact input,
+#contact textarea {
   padding: 15px;
   margin-top: 9px;
   border: 1px solid var(--light-blue);
 }
 
+
+#contact textarea{
+  width: 100%
+}
 #contact input:focus {
   outline: 1px solid var(--blue);
 }
@@ -919,6 +925,12 @@ footer {
 
   #contact {
     width: 95%;
+  }
+
+  #contact .contact-form form .inputs-wrapper{
+    display: flex!important;
+    flex-direction: column;
+    gap: 20px 0;
   }
 
   #contact .contact-icons {
