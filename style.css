@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'ikaros_sanslight';
-  src: url('./Ikaros/ikaros-light-webfont.woff2') format('woff2'),
-    url('./Ikaros/ikaros-light-webfont.woff') format('woff');
+  src: url('./Ikaros Fix/ikaros-light-webfont.woff2') format('woff2'),
+    url('./Ikaros Fix/ikaros-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -12,11 +12,10 @@
 
 @font-face {
   font-family: 'ikaros_sansregular';
-  src: url('./Ikaros/ikaros-regular-webfont.woff2') format('woff2'),
-    url('./Ikaros/ikaros-regular-webfont.woff') format('woff');
+  src: url('./Ikaros Fix/ikaros-regular-webfont.woff2') format('woff2'),
+    url('./Ikaros Fix/ikaros-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 html {
@@ -129,8 +128,6 @@ h4 {}
   width: 74%;
   height: 100%;
   background-color: var(--blue);
-  /*background-image: url('./assets/homepage_bg.png');
-  background-size: contain;*/
   z-index: -1;
 }
 
@@ -327,6 +324,7 @@ nav.nav-bar ul.nav-list #main-logo {
   margin-bottom: 27.74px;
   font-weight: 600;
   line-height: 26px;
+  letter-spacing: 0.48px;
 }
 
 #products .wrapper .products-content.who-we-serve .top .left ul {
@@ -342,9 +340,9 @@ nav.nav-bar ul.nav-list #main-logo {
 }
 
 #products .wrapper .products-content.who-we-serve .top .left li.clients-list-item::after {
-  content: '✓';
+  content: url("./assets/checkmark.svg");
   position: absolute;
-  left: -20px;
+  left: -31px;
   top: -3px;
   color: var(--light-blue);
   font-weight: 600;
@@ -417,6 +415,8 @@ nav.nav-bar ul.nav-list #main-logo {
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 41.5px;
+
+  max-width: 500px;
 }
 
 #products .products-content.bars .bottom .right a.button {
@@ -429,6 +429,26 @@ nav.nav-bar ul.nav-list #main-logo {
   border: 1px solid var(--light-blue);
   padding-left: 24px;
   padding-right: 24px;
+}
+
+/*Who we serve background*/
+.who-we-serve-bg {
+  position: absolute;
+  width: 104%;
+  background-color: white;
+  z-index: -1;
+}
+
+.who-we-serve-bg .img-wrapper {
+  width: 85%;
+}
+
+.who-we-serve-bg .img-wrapper img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  opacity: .5;
 }
 
 .blue-bg,
@@ -512,7 +532,7 @@ footer {
   background-color: white;
   position: absolute;
   top: -98px;
-  left: 4px;
+  left: 8%;
 }
 
 #contact {
@@ -636,6 +656,8 @@ footer {
 #footer .wrapper .top .img-wrapper img {
   width: 67px;
   height: 52px;
+
+  filter: brightness(0) invert(1);
 }
 
 #footer .wrapper ul {
